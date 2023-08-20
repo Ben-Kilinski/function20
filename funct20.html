@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function guessTheNumber (x){
+                var x = 36;
+                var num = +prompt("guess the number from one to a hundred")
+                var attempts = 1
+                while (num != x){
+                    if (num > x){
+                    alert("The number is smaller")
+                    }
+                    else {
+                    alert("The number is bigger")
+                    }
+                    num = +prompt("try again")
+                    attempts++
+                } 
+                console.log("congrats, 36 is the number");
+                console.log("attempts number: " + attempts)            
+            }
+            
+            
+    </script>
+</body>
+</html>
+
